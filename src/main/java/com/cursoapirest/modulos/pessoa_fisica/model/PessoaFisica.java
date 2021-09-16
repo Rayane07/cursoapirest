@@ -18,15 +18,15 @@ public class PessoaFisica implements Serializable {
     private Long id;
     private String nome;
     private String email;
-   
+    private String cpf;
 
     public PessoaFisica(){}
 
-    public PessoaFisica(Long id, String nome, String email) {
+    public PessoaFisica(Long id, String nome, String email, String cpf) {
         this.id = id;
         this.nome = nome;
         this.email = email;
-        
+        this.cpf = cpf;
     }
 
     @Override
@@ -69,5 +69,13 @@ public class PessoaFisica implements Serializable {
     public void setEmail(String email) {
         this.email = email;
     }
+
+	public String getCpf() {
+		return cpf;
+	}
+
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
+	}
 
 }
